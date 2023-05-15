@@ -34,5 +34,9 @@
     height: 50px;
     color: white;
     text-align: center;
+    @media screen and (max-width: 480px) {
+      height: 30px;
+      width:75px;
+      font-size: 10px;
 
-    }
+    }}

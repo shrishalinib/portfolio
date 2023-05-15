@@ -21,7 +21,8 @@
         z-index: 2;
         font-size: 50px;
         @media screen and (max-width: 480px) {
-            font-size: 30px;}
+            font-size: 30px;
+        margin-right: 100px;}
            
     }
 
@@ -43,7 +44,7 @@
             margin-top: 25px;
             margin-left: 50px;
             margin-right: 50px;
-    
+            border-radius: 5px;
             display: grid;
             grid-template-columns: 1fr 1fr;
             column-gap: 25px;
@@ -61,7 +62,7 @@
         {
         text-align: center;
         padding: 20px;
-        border-radius: 10px;
+        border-radius: 5px;
         background-color: #8d88f3;
     }
 

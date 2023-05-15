@@ -113,8 +113,14 @@
               outline: none;
             }
             @media screen and (max-width: 480px) {
-              width: 75px;
-              height: 20px;}
+             
+              font-weight: 200;
+              border-radius: 5px;
+              padding-bottom: 5px;
+              margin-top: 10px;
+              width:fit-content;
+              height: fit-content;
+            }
 
 
           }

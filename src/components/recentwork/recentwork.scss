@@ -5,11 +5,18 @@
         align-items: center;
         justify-content: center;
         @media screen and (max-width: 480px) {
-            height: 200vh;}
+            height: 250vh;}
         .pgtittle{
             margin: 50px;
             font-size: 30px;
             margin-left: 140px;
+            @media screen and (max-width: 480px) {
+                
+                    
+                    font-size: 15px;
+                    margin-right: 140px;
+                
+                }
 
         }
         
@@ -26,6 +33,10 @@
         background-color: white;
         border-radius: 100px;
         margin-left: 110px;
+        @media screen and (max-width: 480px) {
+margin-right: 120px;
+border-radius: 5px;
+}
         
 
     
@@ -46,6 +57,7 @@
 
         h2{
             position: absolute;
+           
         }
         img{
             width: 100%;

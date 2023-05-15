@@ -14,7 +14,6 @@
         position: absolute;
         cursor: pointer;
         left: 150px;
-        margin-left: 100px;
         @media screen and (max-width: 480px) {
           left: 15px;
         }
@@ -33,7 +32,6 @@
     }
     
     .slider {
-      margin-left: 50px;
         height: 350px;
         display: flex;
         position: absolute;
