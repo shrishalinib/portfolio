@@ -3,7 +3,7 @@ import "./footer.scss";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
-
+import ScrollUpButton from '../button/ScrollUpButton';
 const Foooter: React.FC=()=>
 {
   return (
@@ -16,13 +16,16 @@ const Foooter: React.FC=()=>
       <div className="icons"> <TwitterIcon/>   </div> 
 
        </div>  
+      
        <div className="links">
        <a href='#intro' className='navbar'>Home</a>
        <a href='#portfolio'className='navbar'>Portfolio</a>
        <a href='#features'className='navbar'>Features</a>
 
        <a href='#contact'className='navbar'>Contact</a></div>
+       <ScrollUpButton/>
     </div>
+    
   )
 }
 

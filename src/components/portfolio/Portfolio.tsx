@@ -15,7 +15,7 @@ const Portfolio: React.FC=()=>
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
       img:
-        "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+        "./assets/work4.png",
     },
     {
       id: "2",
@@ -24,8 +24,7 @@ const Portfolio: React.FC=()=>
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       img:
-        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
-    },
+      "./assets/Plantworld.png"    },
     {
       id: "3",
       icon: "./assets/writing.png",
@@ -64,7 +63,7 @@ const Portfolio: React.FC=()=>
               </div>
               <div className="right">
                 <img
-                  src="assets/Plantworld.png"
+                  src={d.img}
                   alt=""
                 />
               </div>

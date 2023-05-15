@@ -37,7 +37,9 @@ const Features: React.FC=()=>
 {
   return (
     <section className='features' id="features">
-      <h2 className='sectiontitle' >Features</h2>
+      <div className="headingtittle">
+      <h2 className='sectiontitle' >Skills</h2>
+      </div>
       <div className='sectioncontainer'>
         {
           data.map(({ id, title , description }) => {
@@ -51,6 +53,7 @@ const Features: React.FC=()=>
             )
           }</div>
         </section>
+       
       
     
     

@@ -1,35 +1,84 @@
-import React from 'react';
+import React, { useState } from "react";
 import "./topbar.scss";
-import{Person,Mail} from "@mui/icons-material";
-const Topbar: React.FC=()=>
-{
-
+import {
+  LibraryBooksOutlined,
+  Close,
+  Menu,
+  HomeOutlined,
+  PersonOutlined,
+  WorkOutlineOutlined,
+  SchoolOutlined,
+  MessageOutlined,
+} from "@mui/icons-material";
+const Topbar: React.FC = () => {
+  const [isMobile, setIsMobile] = useState(false);
   return (
-    <div className='topbar'>
+    <div className="topbar">
       <div className="wrapper">
         <div className="left">
-            <a href='#intro' className='logo'>gine.</a>
-                <div className="itemcontainer">
-                <Person className='icon' />
-                <span>+44 12345 67890</span>
-                </div>
-                <div className='itemcontainer'>
-                <Mail className='icon'/>
-                <span> abcd@gine.com</span>
-                </div>
+          <a href="#intro" className="logo">
+            gine.
+          </a>
         </div>
-       <div className='center'> 
-       <a href='#intro' className='navbar'>Home</a>
-       <a href='#portfolio'className='navbar'>Portfolio</a>
-       <a href='#features'className='navbar'>Features</a>
+        <div
+          className={isMobile ? "responsivecenter" : "center"}
+          onClick={() => setIsMobile(false)}
+        >
+          <ul className="list">
+            <div className="navbar">
+              <li>
+                <a href="#intro">
+                  <HomeOutlined />
+                </a>
+              </li>
+            </div>
 
-       <a href='#contact'className='navbar'>Contact</a>
-      </div>
+            <div className="navbar">
+              <li>
+                <a href="#about">
+                  <PersonOutlined />
+                </a>
+              </li>
+            </div>
 
-        
+            <div className="navbar">
+              <li>
+                <a href="#portfolio">
+                  <WorkOutlineOutlined />
+                </a>
+              </li>
+            </div>
+
+            <div className="navbar">
+              <li>
+                <a href="#recentwork">
+                  <LibraryBooksOutlined />
+                </a>
+              </li>
+            </div>
+
+            <div className="navbar">
+              <li>
+                <a href="#features">
+                  <SchoolOutlined />
+                </a>
+              </li>
+            </div>
+
+            <div className="navbar">
+              <a href="#contact">
+                <MessageOutlined />
+              </a>
+            </div>
+          </ul>
+        </div>
+
+        <button className="mobilemenu" onClick={() => setIsMobile(!isMobile)}>
+          {isMobile ? <Close /> : <Menu />}
+        </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Topbar;
